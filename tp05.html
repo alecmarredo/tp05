@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Nº5</title>
+</head>
+<body>
+    <H1><U><strong>Actividades:</strong></U></H1>
+    <h2>Ejemplos:</h2>
+
+    <h3>Ejemplo 1:</h3>
+    <form action="/registro" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required> <!-- tipo texto-->
+ 
+ 
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required> <!-- tipo email -->
+ 
+ 
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required> <!-- tipo password-->
+ 
+ 
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required> <!-- tipo número-->
+
+        <input type="submit" value="Registrarse"> <!-- botón de envío al servidor-->
+   </form>
+
+        <h3>Ejemplo 2:</h3>
+
+        <form action="/encuesta" method="post">
+            <label for="ocupacion">Ocupación:</label> <!-- el valor de for es el ID del select-->
+            <select id="ocupacion" name="ocupacion" required> <!-- selector de opciones -->
+                <option value="">Selecciona una opción</option> <!-- no hay valor en el atributo value -->
+                <option value="estudiante">Estudiante</option> <!-- aquí si hay valor en value, es lo que se manda al servidor: estudiante-->
+                <option value="profesor">Profesor</option> <!-- valor enviado profesor-->
+                <option value="trabajador">Trabajador</option> <!-- valor enviado trabajador -->
+            </select>
+     
+     
+            <label for="intereses">Intereses:</label>
+            <input type="checkbox" id="interes1" name="intereses" value="deportes"> <label for="interes1">Deportes</label> <!-- uso de checkbox (cajas de verificación) -->
+            <input type="checkbox" id="interes2" name="intereses" value="musica"> <label for="interes2">Música</label>
+            <input type="checkbox" id="interes3" name="intereses" value="lectura"> <label for="interes3">Lectura</label>
+     
+     
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios"></textarea> <!-- uso de textarea para escribir -->
+     
+     
+            <input type="submit" value="Enviar">
+        </form>
+
+        <h3>Ejemplo 3:</h3>
+
+        <form action="/subir-archivo" method="post" enctype="multipart/form-data">
+            <label for="archivo">Selecciona un archivo:</label>
+            <input type="file" id="archivo" name="archivo" required>
+     
+     
+            <input type="submit" value="Subir archivo">
+        </form>
+
+    <h3>¿Qué atributo se utiliza para especificar la URL a la que se enviarán los datos del formulario?</h3>
+    <p>b) <u><strong>Action</strong></u></p>
+    <h3>¿Cuál es el atributo que se utiliza para especificar <br> el tipo de datos que se espera en un campo de entrada?</h3>
+    <p>b) <u><strong>input-type</strong></u></p>
+    <h3>¿Cuál de los siguientes tipos de campo de entrada <br> se utiliza para ingresar direcciones de correo electrónico?
+    </h3>
+    <p>d) <u><strong>input</strong></u></p>
+    <h3>¿Cuál es el elemento HTML que se utiliza para asociar un texto descriptivo <br> con un campo de entrada en un formulario?</h3>
+    <p>d) <u><strong>label</strong></u>
+    </p>
+    <h3>¿Cuál de las siguientes opciones es la etiqueta correcta <br> para crear un botón de envío en un formulario?</h3>
+    <p>a) <u><strong>&lt;input type="submit"&gt;</strong></u></submit></p>
+    <h3>¿Cuál de los siguientes atributos se utiliza para hacer <br> que un campo de entrada sea obligatorio en un formulario?</h3>
+    <p> a) <u><strong>required</strong></u></p>
+    <h3>¿Cuál de los siguientes elementos HTML se utiliza para crear una lista desplegable en un formulario?</h3>
+    <p> c) <u><strong>select</strong></u> </p>
+    <h3>¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar un apellido?</h3>
+    <p> d) <u><strong>input</strong></u></p>
+    <h3>¿Qué atributo se utiliza para definir un valor predeterminado en un campo de entrada de un formulario?</h3>
+    <p>a) <u><strong>value</strong></u></p>
+    <h3>¿Qué son los métodos / verbos de petición HTTP? Dar ejemplos. Bibliografía MDN</h3>
+    <p>
+        los métodos O verbos de petición HTTP son métodos de solicitud que a veces son llamados HTTP verbs. Cada uno de ellos implementan una semántica diferente,  <br>
+        pero algunas características similares <br>
+         son compartidas por un grupo de ellos: ej. un request method puede ser safe, idempotent, o cacheable.
+    </p>
+    <h3>¿Qué son los códigos de estado de respuestas HTTP? Realizar una tabla con su clasificación. Bibliografía MDN
+    </h3>
+    <p>
+        Los códigos de estado de respuesta HTTP indican si se ha completado satisfactoriamente una solicitud HTTP específica. Las respuestas se agrupan en cinco clases: <br>
+<br>
+    Respuestas informativas <br>
+    Respuestas satisfactorias <br>
+    Redirecciones <br>
+    Errores de los clientes <br>
+    y errores de los servidores <br>
+
+    </p>
+    <h3>2- Aplicar formularios <br>
+
+        🟡 Formularios <br>
+        
+        Crear una página que contenga header - main - footer. La página tiene que ser sobre el registro de clientes para una empresa. <br>
+        Elegir una de las siguientes temáticas: autos, videojuegos, cosmética, indumentaria. <br>
+        
+        El formulario debe solicitar los siguientes datos: nombre y apellido* , correo electrónico*, fecha de nacimiento, DNI*, teléfono, usuario de X, usuario de Instagram, ciudad, provincia. <br>
+        El formulario tendrá, además, que consultar al usuario sobre sus preferencias relacionadas con la temática elegida, por ejemplo: <br>
+        ¿qué deportes realiza? tenis - natación - basquet <br>
+        
+        (*) campos obligatorios <br>
+        
+        Características <br>
+        Organizar en fieldset
+        </h3>
+        
+</body>
+</html>

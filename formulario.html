@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Datos</h1>
+    <form action="/registro" method="post">
+        <fieldset>
+            <label for="nombre y  apellido">Nombre y apellido:</label>
+            <input type="text" id="nombre y apellido" name="nombre y apellido" required>
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+
+            <label for="DNI">DNI:</label>
+            <input type="password" id="DNI" name="DNI">
+
+
+            <label for="usuario de x">Usuario de X:</label>
+            <input type="number" id="usuario de x" name="usuario de x">
+
+            <label for="instagran">Instagram:</label>
+            <input type="instagram" value="instagram">
+        </fieldset>
+
+        <fieldset>
+            <legend>ubicacion</legend>
+            <label for="ciudad">Ciudad:</label>
+            <input type="ciudad" id="ciudad" name="cuidad">
+
+            <label for="provincia">Provincia:</label>
+            <input type="provincia" id="provincia" name="provincia">
+        </fieldset>
+        <fieldset>
+            <legend>Preferencia de sistemas operativos</legend>
+            <label for="sistemas">¿Que sistema operativo te gusta más?</label>
+            <select id="sistemas" name="sistemas">
+                <option value="Windows">Windows</option>
+                <option value="Linux">Linux</option>
+                <option value="Ubuntu">Ubuntu</option>
+                <option value="IOS">IOS</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="Registrarse">
+        <input type="reset" value="resetear">
+
+    </form>
+</body>
+
+</html>
